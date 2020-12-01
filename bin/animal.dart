@@ -9,7 +9,7 @@ class Animal {
     if (_name.isEmpty) {
       print("Hello");
     } else {
-      print("Hello $_name");
+      print("Hello $_name Nice to meet you");
     }
   }
 }

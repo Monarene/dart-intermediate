@@ -1,11 +1,18 @@
 import "dart:convert";
 import "package:dart_intermediate/dart_intermediate.dart" as dart_intermediate;
 import "package:http/http.dart" as http;
+import 'animal.dart';
 import 'myClass.dart';
 
 void main(List<String> arguments) {
-  MyClass classObject = MyClass();
+  final MyClass classObject = MyClass();
   classObject.printHello("Michael");
+
+  final Animal animal = Animal("Georage");
+  animal.sayHello();
+
+  final Animal goat = Animal("");
+  goat.sayHello();
 }
 
 // const String url = "https://www.google.com/";
