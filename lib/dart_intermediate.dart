@@ -3,5 +3,5 @@ int calculate() {
 }
 
 void sayHello() {
-  print("Hi Hello");
+  print('Hi Hello');
 }
