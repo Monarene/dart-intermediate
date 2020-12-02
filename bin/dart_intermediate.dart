@@ -19,6 +19,9 @@ void main(List<String> arguments) {
 
   Mammal mammal = Mammal("John", 12, "Rotweiler");
   mammal.test();
+
+  RaceCar raceCar = RaceCar();
+  raceCar.horn();
 }
 
 // const String url = "https://www.google.com/";

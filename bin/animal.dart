@@ -46,3 +46,22 @@ class Mammal extends Animal {
     super.test();
   }
 }
+
+abstract class Car {
+  bool hasHorns;
+  bool hasWheels;
+
+  void horn() => print("Horn in a car");
+}
+
+class RaceCar extends Car {
+  RaceCar() {
+    this.hasHorns = true;
+    this.hasWheels = true;
+  }
+
+  void horn() {
+    print("Hook in a race car");
+    super.horn();
+  }
+}
