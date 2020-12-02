@@ -1,8 +1,11 @@
-import "dart:convert";
+// import "dart:convert";
+
+// import "package:http/http.dart" as http;
+
 import "package:dart_intermediate/dart_intermediate.dart" as dart_intermediate;
-import "package:http/http.dart" as http;
-import 'animal.dart';
-import 'myClass.dart';
+
+import "animal.dart";
+import "myClass.dart";
 
 void main(List<String> arguments) {
   final MyClass classObject = MyClass();

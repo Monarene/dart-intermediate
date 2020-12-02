@@ -1,12 +1,15 @@
 class Animal {
   String _name = "";
-  int _age = "";
+  int _age = 1;
   String breed = "";
 
-  Animal(String name, int age, this.breed) {
-    _name = name;
-    _age = age;
-  }
+  Animal(this._name, this._age, this.breed);
+
+  String get name => _name;
+  void set name(String value) => _name = value;
+
+  int get age => _age;
+  void set age(int value) => _age = value;
 
   void sayHello() {
     if (_name.isEmpty) {
@@ -15,14 +18,16 @@ class Animal {
       print("Hello $_name Nice to meet you");
     }
   }
+
+  void printAge() => print(_age);
+
+  void _display(String message) => print(message);
+  void saySomething(String message) => _display(message);
 }
 
 class Dog {
   int age = 1;
   String name = "fiddo";
 
-  Dog(int age, String name) {
-    this.age = age;
-    this.name = name;
-  }
+  Dog(this.age, this.name);
 }
