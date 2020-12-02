@@ -8,11 +8,8 @@ void main(List<String> arguments) {
   final MyClass classObject = MyClass();
   classObject.printHello("Michael");
 
-  final Animal animal = Animal("Georage");
+  final Animal animal = Animal("Georage", 4, "Bull");
   animal.sayHello();
-
-  final Animal goat = Animal("");
-  goat.sayHello();
 }
 
 // const String url = "https://www.google.com/";
