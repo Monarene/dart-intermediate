@@ -2,8 +2,12 @@ class Animal {
   String _name = "";
   int _age = 1;
   String breed = "";
+  static int _counter = 0;
 
-  Animal(this._name, this._age, this.breed);
+  Animal(this._name, this._age, this.breed) {
+    _counter++;
+    print("There is $_counter of us ");
+  }
 
   String get name => _name;
   void set name(String value) => _name = value;
@@ -19,15 +23,26 @@ class Animal {
     }
   }
 
+  static void running() {
+    print("running");
+  }
+
   void printAge() => print(_age);
 
   void _display(String message) => print(message);
   void saySomething(String message) => _display(message);
+
+  void test() {
+    print("I am testing in Animal");
+  }
 }
 
-class Dog {
-  int age = 1;
-  String name = "fiddo";
+class Mammal extends Animal {
+  Mammal(String name, int age, String breed) : super(name, age, breed);
 
-  Dog(this.age, this.name);
+  @override
+  void test() {
+    print("I am testing in Mammal");
+    super.test();
+  }
 }

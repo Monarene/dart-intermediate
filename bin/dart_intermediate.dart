@@ -5,14 +5,20 @@
 import "package:dart_intermediate/dart_intermediate.dart" as dart_intermediate;
 
 import "animal.dart";
-import "myClass.dart";
+// import 'myClass.dart';
 
 void main(List<String> arguments) {
-  final MyClass classObject = MyClass();
-  classObject.printHello("Michael");
+  var response = dart_intermediate.calculate();
 
-  final Animal animal = Animal("Georage", 4, "Bull");
+  Animal animal = Animal("Georage", 4, "Bull");
+  Animal john = Animal("John", 4, "Bull");
+  Animal grey = Animal("Grey", 4, "Bull");
+  Animal.running();
+
   animal.sayHello();
+
+  Mammal mammal = Mammal("John", 12, "Rotweiler");
+  mammal.test();
 }
 
 // const String url = "https://www.google.com/";
